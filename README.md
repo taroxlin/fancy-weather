@@ -1,1 +1,1 @@
-[https://taroxlin.github.io/fancy-weather](Online Version)
+[Online Version!](http://taroxlin.github.io/fancy-weather/)
