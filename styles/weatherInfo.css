@@ -1,0 +1,137 @@
+.today{
+    border-radius: 20px;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.today h2, .today h3{
+    text-align: center;
+}
+.today h2{
+    font-size: 1.8rem;
+}
+.today h3{
+    font-size: 1.6rem;
+}
+.weather-info{
+    justify-self: center;
+    margin: 10px 0 0 0;
+}
+.today-weather{
+    display: grid;
+    grid-template-areas: "temp wImg"
+                         "inf inf";
+}
+.today-weather h1 {
+    grid-area: temp;
+    font-size: 50px;
+    justify-self: center;
+    text-align: center;
+}
+.today-weather img {
+    grid-area: wImg;
+    justify-self: center;
+}
+.today-other-info{
+    grid-area: inf;
+    justify-self: center;
+    width: 90%;
+    text-align: center;
+}
+.today-other-info h2{
+font-size: 1.4rem;
+}
+.future-days{
+    margin-top: 10px;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.future-days .future-day-single:nth-child(2) {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.future-day-single{
+    display: grid;
+    grid-template-areas: "day day"
+                         "daytemp dayimg";
+}
+.future-day-single h2{
+    text-align: center;
+    grid-area: day;
+    font-size: 1.5rem;
+}
+.future-day-single h4{
+    font-size: 30px;
+    grid-area: daytemp;
+    justify-self: center;
+}
+.future-day-single img{
+    grid-area: dayimg;
+    justify-self: center;
+}
+
+
+
+@media (min-width: 575.98px) {
+    .weather-info{
+        width: 85%;
+        margin: 10px auto 0;
+    }
+    .today-weather{
+        grid-template-areas: "temp inf"
+                             "wImg inf";
+        grid-template-columns: 30%;
+    }
+    .today-weather h1 {
+        font-size: 65px;
+        margin: auto;
+    }
+    .future-days{
+        display: flex;
+        flex-direction: row;
+    }
+    .future-day-single{
+        display: block;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .future-days .future-day-single:nth-child(2) {
+        border-top: none;
+        border-bottom: none;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
+    .future-day-single h4{
+        text-align: center;
+        margin: 0;
+    }
+    .future-day-single img{
+        margin: 0 auto;
+        display: block;
+    }
+    .today-other-info h2{
+        font-size: 1.3rem;
+    }
+    .future-day-single h2{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .weather-info{
+        width: 90%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .today-weather h1 {
+        font-size: 55px;
+    }
+}
+
+@media (min-width: 991.98px) {
+ .weather-info{
+     max-width: 550px;
+ }
+}

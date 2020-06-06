@@ -1,0 +1,44 @@
+.weather-map{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 10px 0;
+    border: 3px solid white;
+    border-radius: 10%;
+}
+
+#weatherMap{
+    width: 90%;
+    min-height: 300px;
+    border-radius: 20px;
+    margin: auto;  
+}
+.geo-size{
+    display: flex;
+    justify-content: space-around;
+}
+.geo-size > h3{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+@media (min-width: 575.98px) { 
+    .weather-map{
+        width: 85%;
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 767.98px) {
+.weather-map{
+    height: max-content;
+    margin-top: 20px;
+}
+
+}
+
+@media (min-width: 991.98px) {
+.weather-map{
+    width: 90%;
+}
+}

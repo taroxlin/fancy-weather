@@ -1,0 +1,60 @@
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        color: red;
+      }
+      to {
+        transform: rotate(360deg);
+        color: green;
+      }
+}
+
+.naviLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+select,.temp-button,.refresh-button{
+    height: 50px;
+    width: 50px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.refresh-button > div{
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.disableTemp{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+
+@media (min-width: 575.98px) { 
+    .naviLeft{
+        width: 70%;
+        margin: 0 auto 20px;
+    }
+
+}
+
+@media (min-width: 767.98px) {
+  .naviLeft{
+        width: 80%;
+        grid-area: Lmenu;
+        margin: 10px auto 0;
+    }
+}
+
+@media (min-width: 991.98px) {
+ .naviLeft{
+     max-width: 40%;
+     margin: 0 0 0 40px;
+ }
+}

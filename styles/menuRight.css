@@ -1,0 +1,58 @@
+
+.naviRight{
+    margin-left: 28px;
+    width: 87%;
+}
+
+.rightNavi{
+    margin: 0;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.rightNavi > *{
+    border: none;
+    background-color: transparent;
+}
+
+.form-input:focus,button:focus{
+    outline:0;
+}
+.mic-button{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.search-button{
+}
+
+.form-input{
+    margin-left: 15px;
+    line-height: 30px;
+    font-size: 30px;
+    max-width: 60%;
+}
+
+@media (min-width: 575.98px) { 
+    .naviRight{
+        margin: auto;
+        width: 60%;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .naviRight{
+        width: 80%;
+        grid-area: Rmenu;
+        margin: 10px auto 0;
+    }
+
+}
+
+@media (min-width: 991.98px) {
+
+}
